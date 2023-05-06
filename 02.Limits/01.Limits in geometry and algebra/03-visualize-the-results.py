@@ -33,6 +33,9 @@ plt.plot(domain, fx(domain), color='black', label='y = f(x)')
 plt.plot(x_axis_values[:, 0], limit_values[:, 0], 'o', markerfacecolor='w', label='from left')
 plt.plot(x_axis_values[:, 1], limit_values[:, 1], 'o', markerfacecolor='w', label='from right')
 
+# use plot.xlim() to zoom in
+plt.xlim([a - 0.02, a + 0.02])
+
 plt.legend()
 plt.grid()
 plt.show()
