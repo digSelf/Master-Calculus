@@ -12,6 +12,7 @@ hsx = 1/sx
 sym.plot(
     gsx, fsx, hsx, 
     (sx, -100, 100), 
+    nb_of_points=1000, Adaptive=False,
     xlim=(-100, 100), ylim=(-1, 1)
 )
 
