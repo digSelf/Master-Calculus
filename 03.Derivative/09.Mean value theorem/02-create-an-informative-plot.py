@@ -23,7 +23,7 @@ plt.plot((a, c), (fx(a), fx(c)), ls=":", label='secant')
 r = 1/2
 k = (fx(c) - fx(a)) / (c - a)
 b = fx(r)
-gx = lambda x, k, b : k * x + b
+gx = lambda x, k, b : k * (x - b) + b
 plt.scatter(r, fx(r), marker=".", color='k', label='b')
 
 # subrange
